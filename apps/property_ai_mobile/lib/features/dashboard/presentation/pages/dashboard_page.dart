@@ -5,14 +5,16 @@ class DashboardPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    final theme = Theme.of(context);
+
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('SiriConnect'),
+      ),
       body: Center(
         child: Text(
-          'SiriConnect',
-          style: TextStyle(
-            fontSize: 34,
-            fontWeight: FontWeight.bold,
-          ),
+          'Property AI',
+          style: theme.textTheme.headlineMedium,
         ),
       ),
     );
