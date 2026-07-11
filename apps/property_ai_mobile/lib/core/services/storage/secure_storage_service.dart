@@ -5,15 +5,11 @@ import 'app_storage.dart';
 class SecureStorageService implements AppStorage {
   SecureStorageService();
 
-  final FlutterSecureStorage _storage =
-      const FlutterSecureStorage();
+  final FlutterSecureStorage _storage = const FlutterSecureStorage();
 
   @override
   Future<void> write(String key, String value) {
-    return _storage.write(
-      key: key,
-      value: value,
-    );
+    return _storage.write(key: key, value: value);
   }
 
   @override

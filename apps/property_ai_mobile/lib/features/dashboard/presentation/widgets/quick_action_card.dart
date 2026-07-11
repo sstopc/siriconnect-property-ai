@@ -23,9 +23,7 @@ class QuickActionCard extends StatelessWidget {
           children: [
             Icon(icon),
             const SizedBox(width: 16),
-            Expanded(
-              child: Text(title),
-            ),
+            Expanded(child: Text(title)),
             const Icon(Icons.chevron_right),
           ],
         ),

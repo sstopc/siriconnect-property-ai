@@ -8,14 +8,9 @@ class DashboardPage extends StatelessWidget {
     final theme = Theme.of(context);
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('SiriConnect'),
-      ),
+      appBar: AppBar(title: const Text('SiriConnect')),
       body: Center(
-        child: Text(
-          'Property AI',
-          style: theme.textTheme.headlineMedium,
-        ),
+        child: Text('Property AI', style: theme.textTheme.headlineMedium),
       ),
     );
   }

@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppSection extends StatelessWidget {
-  const AppSection({
-    super.key,
-    required this.title,
-    required this.child,
-  });
+  const AppSection({super.key, required this.title, required this.child});
 
   final String title;
   final Widget child;
@@ -15,10 +11,7 @@ class AppSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          title,
-          style: Theme.of(context).textTheme.titleLarge,
-        ),
+        Text(title, style: Theme.of(context).textTheme.titleLarge),
         const SizedBox(height: 12),
         child,
       ],

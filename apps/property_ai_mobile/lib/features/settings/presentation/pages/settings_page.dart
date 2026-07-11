@@ -8,10 +8,7 @@ class SettingsPage extends StatelessWidget {
     return const Center(
       child: Text(
         'Settings',
-        style: TextStyle(
-          fontSize: 30,
-          fontWeight: FontWeight.bold,
-        ),
+        style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
       ),
     );
   }

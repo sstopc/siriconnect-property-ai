@@ -8,10 +8,7 @@ class CustomerPage extends StatelessWidget {
     return const Center(
       child: Text(
         'Customers',
-        style: TextStyle(
-          fontSize: 30,
-          fontWeight: FontWeight.bold,
-        ),
+        style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
       ),
     );
   }

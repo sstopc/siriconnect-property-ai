@@ -4,10 +4,7 @@ import '../../../../core/widgets/summary_card.dart';
 import '../../domain/entities/dashboard_summary.dart';
 
 class DashboardGrid extends StatelessWidget {
-  const DashboardGrid({
-    super.key,
-    required this.summary,
-  });
+  const DashboardGrid({super.key, required this.summary});
 
   final DashboardSummary summary;
 

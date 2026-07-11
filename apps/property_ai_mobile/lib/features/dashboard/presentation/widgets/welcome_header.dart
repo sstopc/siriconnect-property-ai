@@ -13,10 +13,7 @@ class WelcomeHeader extends StatelessWidget {
           style: Theme.of(context).textTheme.headlineSmall,
         ),
         const SizedBox(height: 8),
-        Text(
-          'Lucky',
-          style: Theme.of(context).textTheme.titleLarge,
-        ),
+        Text('Lucky', style: Theme.of(context).textTheme.titleLarge),
         const SizedBox(height: 4),
         Text(
           'Welcome to SiriConnect',

@@ -23,10 +23,7 @@ class AppTheme {
 
       textTheme: AppTypography.textTheme,
 
-      appBarTheme: const AppBarTheme(
-        centerTitle: true,
-        elevation: 0,
-      ),
+      appBarTheme: const AppBarTheme(centerTitle: true, elevation: 0),
     );
   }
 }

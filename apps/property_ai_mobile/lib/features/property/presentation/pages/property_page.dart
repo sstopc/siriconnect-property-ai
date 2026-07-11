@@ -8,10 +8,7 @@ class PropertyPage extends StatelessWidget {
     return const Center(
       child: Text(
         'Properties',
-        style: TextStyle(
-          fontSize: 30,
-          fontWeight: FontWeight.bold,
-        ),
+        style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
       ),
     );
   }

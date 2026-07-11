@@ -18,10 +18,7 @@ class AppTypography {
         fontWeight: FontWeight.w600,
         color: AppColors.textPrimary,
       ),
-      bodyLarge: GoogleFonts.inter(
-        fontSize: 16,
-        color: AppColors.textPrimary,
-      ),
+      bodyLarge: GoogleFonts.inter(fontSize: 16, color: AppColors.textPrimary),
       bodyMedium: GoogleFonts.inter(
         fontSize: 14,
         color: AppColors.textSecondary,

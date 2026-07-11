@@ -64,10 +64,7 @@ class HomePage extends StatelessWidget {
 
             AppGap.lg,
 
-            const AppSection(
-              title: 'Recent Activity',
-              child: RecentActivity(),
-            ),
+            const AppSection(title: 'Recent Activity', child: RecentActivity()),
           ],
         ),
       ),

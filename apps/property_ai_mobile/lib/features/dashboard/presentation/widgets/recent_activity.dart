@@ -7,9 +7,6 @@ class RecentActivity extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const EmptyState(
-      message: 'No activity yet.',
-      icon: Icons.history,
-    );
+    return const EmptyState(message: 'No activity yet.', icon: Icons.history);
   }
 }

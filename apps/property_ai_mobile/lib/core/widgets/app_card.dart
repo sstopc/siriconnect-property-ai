@@ -3,10 +3,7 @@ import '../theme/app_radius.dart';
 import '../theme/app_spacing.dart';
 
 class AppCard extends StatelessWidget {
-  const AppCard({
-    super.key,
-    required this.child,
-  });
+  const AppCard({super.key, required this.child});
 
   final Widget child;
 

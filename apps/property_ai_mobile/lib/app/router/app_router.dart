@@ -51,10 +51,7 @@ class AppRouter {
           );
         },
         routes: [
-          GoRoute(
-            path: '/',
-            builder: (context, state) => const HomePage(),
-          ),
+          GoRoute(path: '/', builder: (context, state) => const HomePage()),
           GoRoute(
             path: '/properties',
             builder: (context, state) => const PropertyPage(),
