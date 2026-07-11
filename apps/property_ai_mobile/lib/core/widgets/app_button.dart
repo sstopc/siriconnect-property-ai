@@ -1,0 +1,23 @@
+import 'package:flutter/material.dart';
+
+class AppButton extends StatelessWidget {
+  const AppButton({
+    super.key,
+    required this.text,
+    required this.onPressed,
+    this.icon,
+  });
+
+  final String text;
+  final VoidCallback onPressed;
+  final IconData? icon;
+
+  @override
+  Widget build(BuildContext context) {
+    return FilledButton.icon(
+      onPressed: onPressed,
+      icon: Icon(icon),
+      label: Text(text),
+    );
+  }
+}
