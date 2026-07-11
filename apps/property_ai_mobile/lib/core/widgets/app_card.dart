@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../theme/app_radius.dart';
+import '../theme/app_spacing.dart';
 
 class AppCard extends StatelessWidget {
   const AppCard({
@@ -11,9 +13,12 @@ class AppCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      elevation: 1,
+      elevation: 0,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(AppRadius.medium),
+      ),
       child: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(AppSpacing.md),
         child: child,
       ),
     );

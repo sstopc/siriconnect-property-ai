@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../theme/app_spacing.dart';
+
 class EmptyState extends StatelessWidget {
   const EmptyState({
     super.key,
@@ -19,10 +21,16 @@ class EmptyState extends StatelessWidget {
           Icon(
             icon,
             size: 64,
-            color: Colors.grey,
+            color: Theme.of(context).colorScheme.onSurfaceVariant,
           ),
-          const SizedBox(height: 16),
-          Text(message),
+
+          const SizedBox(height: AppSpacing.md),
+
+          Text(
+            message,
+            style: Theme.of(context).textTheme.bodyLarge,
+            textAlign: TextAlign.center,
+          ),
         ],
       ),
     );

@@ -14,6 +14,13 @@ class AppButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    if (icon == null) {
+      return FilledButton(
+        onPressed: onPressed,
+        child: Text(text),
+      );
+    }
+
     return FilledButton.icon(
       onPressed: onPressed,
       icon: Icon(icon),

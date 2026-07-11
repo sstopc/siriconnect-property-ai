@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../theme/app_spacing.dart';
 
 import 'app_card.dart';
 
@@ -20,14 +21,14 @@ class SummaryCard extends StatelessWidget {
       child: Row(
         children: [
           Icon(icon, size: 36),
-          const SizedBox(width: 16),
+          const SizedBox(width: AppSpacing.md),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(title),
               Text(
                 value,
-                style: Theme.of(context).textTheme.headlineMedium,
+                style: Theme.of(context).textTheme.titleLarge,
               ),
             ],
           ),
