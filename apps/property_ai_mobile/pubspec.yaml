@@ -12,6 +12,9 @@ dependencies:
   flutter:
     sdk: flutter
   
+  flutter_localizations:
+    sdk: flutter
+  
   flutter_secure_storage: ^9.2.4
 
   cupertino_icons: ^1.0.8
@@ -48,8 +51,10 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  generate: true
 
   assets:
+    - assets/
     - assets/images/
     - assets/icons/
     - assets/fonts/

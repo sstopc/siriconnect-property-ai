@@ -1,0 +1,31 @@
+{
+  "@@locale": "te",
+
+  "appName": "సిరి కనెక్ట్",
+
+  "dashboard": "డాష్‌బోర్డ్",
+
+  "properties": "ప్రాపర్టీలు",
+
+  "customers": "కస్టమర్లు",
+
+  "media": "AI మీడియా స్టూడియో",
+
+  "settings": "సెట్టింగ్స్",
+
+  "todaySummary": "ఈరోజు సారాంశం",
+
+  "quickActions": "త్వరిత చర్యలు",
+
+  "recentActivity": "ఇటీవలి కార్యకలాపాలు",
+
+  "addProperty": "ప్రాపర్టీ జోడించండి",
+
+  "addCustomer": "కస్టమర్ జోడించండి",
+
+  "createPoster": "AI పోస్టర్ సృష్టించండి",
+
+  "createReel": "AI రీల్ సృష్టించండి",
+
+  "noActivity": "ఇంకా కార్యకలాపాలు లేవు."
+}

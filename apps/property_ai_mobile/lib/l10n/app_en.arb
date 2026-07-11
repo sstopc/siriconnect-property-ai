@@ -1,0 +1,31 @@
+{
+  "@@locale": "en",
+
+  "appName": "SiriConnect",
+
+  "dashboard": "Dashboard",
+
+  "properties": "Properties",
+
+  "customers": "Customers",
+
+  "media": "AI Media Studio",
+
+  "settings": "Settings",
+
+  "todaySummary": "Today's Summary",
+
+  "quickActions": "Quick Actions",
+
+  "recentActivity": "Recent Activity",
+
+  "addProperty": "Add Property",
+
+  "addCustomer": "Add Customer",
+
+  "createPoster": "Create AI Poster",
+
+  "createReel": "Create AI Reel",
+
+  "noActivity": "No activity yet."
+}

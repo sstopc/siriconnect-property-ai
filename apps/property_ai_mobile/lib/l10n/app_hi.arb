@@ -1,0 +1,31 @@
+{
+  "@@locale": "hi",
+
+  "appName": "सिरीकनेक्ट",
+
+  "dashboard": "डैशबोर्ड",
+
+  "properties": "प्रॉपर्टीज",
+
+  "customers": "ग्राहक",
+
+  "media": "एआई मीडिया स्टूडियो",
+
+  "settings": "सेटिंग्स",
+
+  "todaySummary": "आज का सारांश",
+
+  "quickActions": "त्वरित कार्य",
+
+  "recentActivity": "हाल की गतिविधियाँ",
+
+  "addProperty": "प्रॉपर्टी जोड़ें",
+
+  "addCustomer": "ग्राहक जोड़ें",
+
+  "createPoster": "AI पोस्टर बनाएं",
+
+  "createReel": "AI रील बनाएं",
+
+  "noActivity": "अभी तक कोई गतिविधि नहीं।"
+}
