@@ -4,4 +4,5 @@ import 'core/logging/app_logger.dart';
 Future<void> main() async {
   await bootstrap();
   AppLogger.info('SiriConnect Started');
+  AppLogger.info('Core services initialized');
 }

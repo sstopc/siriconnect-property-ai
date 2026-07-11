@@ -20,4 +20,12 @@ class AppLogger {
       error: error,
     );
   }
+
+  static void debug(String message) {
+    log(
+      message,
+      name: 'DEBUG',
+    );
+  }
+
 }
