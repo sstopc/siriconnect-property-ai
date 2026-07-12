@@ -1,17 +1,28 @@
-# property_ai_mobile
+# SiriConnect
 
-A new Flutter project.
+## Vision
 
-## Getting Started
+AI-powered business operating system for real estate brokers and builders.
 
-This project is a starting point for a Flutter application.
+## Project Structure
 
-A few resources to get you started if this is your first Flutter project:
+apps/
+backend/
+database/
+docs/
+infrastructure/
+packages/
+scripts/
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Technology Stack
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Flutter
+- Riverpod
+- GoRouter
+- FastAPI (planned)
+- PostgreSQL (planned)
+
+## Current Status
+
+Sprint 1 ✅ Completed
+Sprint 2 🚧 Property Management
