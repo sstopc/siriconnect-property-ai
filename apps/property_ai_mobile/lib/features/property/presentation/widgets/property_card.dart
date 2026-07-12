@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../domain/entities/property.dart';
+import '../../routes/property_routes.dart';
 
 class PropertyCard extends StatelessWidget {
   const PropertyCard({
@@ -12,11 +14,16 @@ class PropertyCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      margin: const EdgeInsets.symmetric(
-        horizontal: 16,
-        vertical: 8,
-      ),
+    return InkWell(
+      borderRadius: BorderRadius.circular(12),
+      onTap: () {
+        context.push(PropertyRoutes.details);
+      },
+      child: Card(
+        margin: const EdgeInsets.symmetric(
+          horizontal: 16,
+          vertical: 8,
+        ),
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -74,6 +81,7 @@ class PropertyCard extends StatelessWidget {
             ),
           ],
         ),
+      ),
       ),
     );
   }

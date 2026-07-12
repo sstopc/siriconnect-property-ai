@@ -1,7 +1,9 @@
 import 'package:go_router/go_router.dart';
 
 import '../presentation/pages/add_property_page.dart';
+import '../presentation/pages/property_details_page.dart';
 import '../presentation/pages/property_list_page.dart';
+
 
 class PropertyRoutes {
   PropertyRoutes._();
@@ -9,6 +11,8 @@ class PropertyRoutes {
   static const propertyList = '/properties';
 
   static const addProperty = '/properties/add';
+
+  static const details = '/properties/details';
 
   static final routes = <GoRoute>[
     GoRoute(
@@ -18,6 +22,10 @@ class PropertyRoutes {
     GoRoute(
       path: addProperty,
       builder: (context, state) => const AddPropertyPage(),
+    ),
+    GoRoute(
+      path: details,
+      builder: (context, state) => const PropertyDetailsPage(),
     ),
   ];
 }

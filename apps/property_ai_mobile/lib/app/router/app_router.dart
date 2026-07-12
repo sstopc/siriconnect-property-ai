@@ -4,6 +4,7 @@ import 'package:property_ai_mobile/features/property/presentation/pages/add_prop
 import '../../features/customer/presentation/pages/customer_page.dart';
 import '../../features/dashboard/presentation/pages/home_page.dart';
 import '../../features/media/presentation/pages/media_page.dart';
+import '../../features/property/presentation/pages/property_details_page.dart';
 import '../../features/property/presentation/pages/property_list_page.dart';
 import '../../features/property/routes/property_routes.dart';
 import '../../features/settings/presentation/pages/settings_page.dart';
@@ -61,6 +62,10 @@ class AppRouter {
           GoRoute(
             path: PropertyRoutes.addProperty,
             builder: (context, state) => const AddPropertyPage()
+          ),
+          GoRoute(
+            path: PropertyRoutes.details,
+            builder: (context, state) => const PropertyDetailsPage(),
           ),
           GoRoute(
             path: '/customers',

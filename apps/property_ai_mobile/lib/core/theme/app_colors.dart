@@ -18,4 +18,15 @@ class AppColors {
   static const Color textSecondary = Color(0xFF64748B);
 
   static const Color error = Color(0xFFDC2626);
+
+  static const Color success = Color(0xFF16A34A);
+
+  static const Color warning = Color(0xFFF59E0B);
+
+  static const Color info = Color(0xFF0284C7);
+
+  static const Color divider = Color(0xFFE2E8F0);
+
+  static const Color card = Colors.white;
+
 }
