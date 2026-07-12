@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import 'package:property_ai_mobile/features/property/presentation/pages/add_property_page.dart';
 
 import '../../features/customer/presentation/pages/customer_page.dart';
 import '../../features/dashboard/presentation/pages/home_page.dart';
@@ -56,6 +57,10 @@ class AppRouter {
           GoRoute(
             path: PropertyRoutes.propertyList,
             builder: (context, state) => const PropertyListPage()
+          ),
+          GoRoute(
+            path: PropertyRoutes.addProperty,
+            builder: (context, state) => const AddPropertyPage()
           ),
           GoRoute(
             path: '/customers',

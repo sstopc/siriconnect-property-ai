@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
+import 'package:go_router/go_router.dart';
+import '../../routes/property_routes.dart';
 import '../providers/property_provider.dart';
 import '../widgets/property_card.dart';
 import '../widgets/property_search_bar.dart';
@@ -17,7 +18,9 @@ class PropertyListPage extends ConsumerWidget {
         title: const Text('Properties'),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          context.push(PropertyRoutes.addProperty);
+        },
         child: const Icon(Icons.add),
       ),
       body: RefreshIndicator(

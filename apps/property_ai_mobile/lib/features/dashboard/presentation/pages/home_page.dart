@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+
 
 import '../../../../core/widgets/app_gap.dart';
 import '../../../../core/widgets/app_page.dart';
 import '../../../../core/widgets/app_section.dart';
+import '../../../property/routes/property_routes.dart';
 import '../providers/dashboard_provider.dart';
 import '../widgets/dashboard_grid.dart';
 import '../widgets/quick_action_card.dart';
@@ -38,7 +41,9 @@ class HomePage extends StatelessWidget {
                   QuickActionCard(
                     icon: Icons.add_home,
                     title: 'Add Property',
-                    onTap: () {},
+                    onTap: () {
+                      context.push(PropertyRoutes.addProperty);
+                    },
                   ),
                   AppGap.sm,
                   QuickActionCard(
