@@ -1,38 +1,40 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/widgets/action_button.dart';
+import '../../../../core/widgets/action_grid.dart';
+
 class PropertyActionBar extends StatelessWidget {
   const PropertyActionBar({super.key});
 
-  Widget button(
-    IconData icon,
-    String label,
-  ) {
-    return Expanded(
-      child: Column(
-        children: [
-          IconButton(
-            onPressed: () {},
-            icon: Icon(icon),
-          ),
-          Text(
-            label,
-            textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 12),
-          ),
-        ],
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return ActionGrid(
       children: [
-        button(Icons.favorite_border, 'Favorite'),
-        button(Icons.call_outlined, 'Call'),
-        button(Icons.chat_outlined, 'WhatsApp'),
-        button(Icons.share_outlined, 'Share'),
-        button(Icons.auto_awesome_outlined, 'AI Poster'),
+        ActionButton(
+          icon: Icons.favorite_border,
+          label: 'Favorite',
+          onPressed: () {},
+        ),
+        ActionButton(
+          icon: Icons.call_outlined,
+          label: 'Call',
+          onPressed: () {},
+        ),
+        ActionButton(
+          icon: Icons.chat_outlined,
+          label: 'WhatsApp',
+          onPressed: () {},
+        ),
+        ActionButton(
+          icon: Icons.share_outlined,
+          label: 'Share',
+          onPressed: () {},
+        ),
+        ActionButton(
+          icon: Icons.auto_awesome_outlined,
+          label: 'AI Poster',
+          onPressed: () {},
+        ),
       ],
     );
   }

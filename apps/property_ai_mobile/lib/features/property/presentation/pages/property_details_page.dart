@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/widgets/section_card.dart';
 import '../widgets/owner_information_card.dart';
+import '../widgets/property_action_bar.dart';
 import '../widgets/property_header.dart';
 import '../widgets/property_specifications.dart';
 
@@ -39,9 +40,7 @@ class PropertyDetailsPage extends StatelessWidget {
 
              SectionCard(
               title: 'Actions',
-              child: Text(
-                'Quick actions will be added in Package 4D.4',
-              ),
+              child: PropertyActionBar(),
             ),
           ],
         ),
