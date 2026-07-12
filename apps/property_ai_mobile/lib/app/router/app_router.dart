@@ -3,7 +3,8 @@ import 'package:go_router/go_router.dart';
 import '../../features/customer/presentation/pages/customer_page.dart';
 import '../../features/dashboard/presentation/pages/home_page.dart';
 import '../../features/media/presentation/pages/media_page.dart';
-import '../../features/property/presentation/pages/property_page.dart';
+import '../../features/property/presentation/pages/property_list_page.dart';
+import '../../features/property/routes/property_routes.dart';
 import '../../features/settings/presentation/pages/settings_page.dart';
 import '../../shared/widgets/app_shell.dart';
 
@@ -53,8 +54,8 @@ class AppRouter {
         routes: [
           GoRoute(path: '/', builder: (context, state) => const HomePage()),
           GoRoute(
-            path: '/properties',
-            builder: (context, state) => const PropertyPage(),
+            path: PropertyRoutes.propertyList,
+            builder: (context, state) => const PropertyListPage()
           ),
           GoRoute(
             path: '/customers',
