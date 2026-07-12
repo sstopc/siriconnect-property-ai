@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_spacing.dart';
-import '../../../../shared/widgets/section_card.dart';
+import '../../../../core/widgets/section_card.dart';
 import '../widgets/property_header.dart';
+import '../widgets/property_specifications.dart';
 
 class PropertyDetailsPage extends StatelessWidget {
   const PropertyDetailsPage({super.key});
@@ -27,9 +28,7 @@ class PropertyDetailsPage extends StatelessWidget {
 
              SectionCard(
               title: 'Property Information',
-              child: Text(
-                'Property specifications will be added in Package 4D.2',
-              ),
+              child: PropertySpecifications(),
             ),
 
              SectionCard(

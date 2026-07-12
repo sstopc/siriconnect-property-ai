@@ -1,54 +1,60 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/widgets/info_tile.dart';
+
 class PropertySpecifications extends StatelessWidget {
   const PropertySpecifications({super.key});
 
-  Widget item(
-    BuildContext context,
-    IconData icon,
-    String title,
-    String value,
-  ) {
-    return Expanded(
-      child: Card(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(
-            vertical: 16,
-            horizontal: 8,
-          ),
-          child: Column(
-            children: [
-              Icon(icon),
-              const SizedBox(height: 8),
-              Text(
-                value,
-                style: Theme.of(context).textTheme.titleMedium,
-              ),
-              Text(title),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       children: [
-        Row(
-          children: [
-            item(context, Icons.bed, 'Bedrooms', '2'),
-            item(context, Icons.bathtub, 'Bathrooms', '2'),
-            item(context, Icons.square_foot, 'Area', '1150'),
-          ],
+        InfoTile(
+          icon: Icons.bed_outlined,
+          label: 'Bedrooms',
+          value: '2',
         ),
-        Row(
-          children: [
-            item(context, Icons.apartment, 'Floor', '3'),
-            item(context, Icons.explore, 'Facing', 'East'),
-            item(context, Icons.local_parking, 'Parking', 'Yes'),
-          ],
+
+        InfoTile(
+          icon: Icons.bathtub_outlined,
+          label: 'Bathrooms',
+          value: '2',
+        ),
+
+        InfoTile(
+          icon: Icons.square_foot_outlined,
+          label: 'Area',
+          value: '1150 sqft',
+        ),
+
+        InfoTile(
+          icon: Icons.apartment_outlined,
+          label: 'Floor',
+          value: '3',
+        ),
+
+        InfoTile(
+          icon: Icons.explore_outlined,
+          label: 'Facing',
+          value: 'East',
+        ),
+
+        InfoTile(
+          icon: Icons.local_parking_outlined,
+          label: 'Parking',
+          value: 'Yes',
+        ),
+
+        InfoTile(
+          icon: Icons.home_work_outlined,
+          label: 'Property Type',
+          value: 'Apartment',
+        ),
+
+        InfoTile(
+          icon: Icons.calendar_today_outlined,
+          label: 'Age',
+          value: '2 Years',
         ),
       ],
     );

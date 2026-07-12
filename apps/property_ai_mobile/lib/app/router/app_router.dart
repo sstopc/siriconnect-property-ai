@@ -8,7 +8,7 @@ import '../../features/property/presentation/pages/property_details_page.dart';
 import '../../features/property/presentation/pages/property_list_page.dart';
 import '../../features/property/routes/property_routes.dart';
 import '../../features/settings/presentation/pages/settings_page.dart';
-import '../../shared/widgets/app_shell.dart';
+import '../layout/app_shell.dart';
 
 class AppRouter {
   AppRouter._();
