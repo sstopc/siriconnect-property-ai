@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/widgets/section_card.dart';
+import '../widgets/owner_information_card.dart';
 import '../widgets/property_header.dart';
 import '../widgets/property_specifications.dart';
 
@@ -33,9 +34,7 @@ class PropertyDetailsPage extends StatelessWidget {
 
              SectionCard(
               title: 'Owner Information',
-              child: Text(
-                'Owner details will be added in Package 4D.3',
-              ),
+              child: OwnerInformationCard(),
             ),
 
              SectionCard(

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../theme/app_colors.dart';
+import '../theme/app_sizes.dart';
 import '../theme/app_spacing.dart';
+
 
 class InfoTile extends StatelessWidget {
   const InfoTile({
@@ -26,6 +28,7 @@ class InfoTile extends StatelessWidget {
           Icon(
             icon,
             color: AppColors.primary,
+            size: AppSizes.iconMedium
           ),
 
           const SizedBox(width: AppSpacing.md),

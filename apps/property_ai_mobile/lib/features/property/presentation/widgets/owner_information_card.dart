@@ -1,39 +1,45 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/widgets/info_tile.dart';
+
 class OwnerInformationCard extends StatelessWidget {
   const OwnerInformationCard({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Card(
-      child: Padding(
-        padding:  EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children:  [
-            Text(
-              'Owner Information',
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            SizedBox(height: 12),
-            ListTile(
-              leading: Icon(Icons.person),
-              title: Text('Ramesh Kumar'),
-            ),
-            ListTile(
-              leading: Icon(Icons.phone),
-              title: Text('+91 9876543210'),
-            ),
-            ListTile(
-              leading: Icon(Icons.schedule),
-              title: Text('Available 9 AM - 7 PM'),
-            ),
-          ],
+    return const Column(
+      children: [
+        CircleAvatar(
+          radius: 32,
+          child: Icon(Icons.person, size: 36),
         ),
-      ),
+
+        SizedBox(height: 16),
+
+        InfoTile(
+          icon: Icons.person_outline,
+          label: 'Owner',
+          value: 'Ramesh Kumar',
+        ),
+
+        InfoTile(
+          icon: Icons.phone_outlined,
+          label: 'Phone',
+          value: '+91 9876543210',
+        ),
+
+        InfoTile(
+          icon: Icons.email_outlined,
+          label: 'Email',
+          value: 'ramesh@example.com',
+        ),
+
+        InfoTile(
+          icon: Icons.schedule_outlined,
+          label: 'Available',
+          value: '9:00 AM - 7:00 PM',
+        ),
+      ],
     );
   }
 }
