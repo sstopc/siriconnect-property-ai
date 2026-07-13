@@ -1,0 +1,17 @@
+Folder PATH listing
+C:\SIRICONNECT-PROPERTY-AI\APPS\PROPERTY_AI_MOBILE\ASSETS
++---animations
+|       .gitkeep
+|       
++---fonts
+|       .gitkeep
+|       
++---icons
+|       .gitkeep
+|       
++---images
+|       .gitkeep
+|       
+\---translations
+        .gitkeep
+        

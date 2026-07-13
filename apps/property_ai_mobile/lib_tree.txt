@@ -1,0 +1,369 @@
+Folder PATH listing
+C:\SIRICONNECT-PROPERTY-AI\APPS\PROPERTY_AI_MOBILE\LIB
+|   main.dart
+|   
++---app
+|   |   app.dart
+|   |   
+|   +---bootstrap
+|   |       bootstrap.dart
+|   |       bootstrap_result.dart
+|   |       startup_tasks.dart
+|   |       
+|   +---layout
+|   |       app_shell.dart
+|   |       
+|   \---router
+|           app_router.dart
+|           
++---core
+|   +---config
+|   |       app_config.dart
+|   |       env.dart
+|   |       
+|   +---constants
+|   |       app_constants.dart
+|   |       
+|   +---errors
+|   |       .gitkeep
+|   |       
+|   +---localization
+|   |       language.dart
+|   |       locale_provider.dart
+|   |       supported_locales.dart
+|   |       
+|   +---providers
+|   |       core_providers.dart
+|   |       
+|   +---services
+|   |   +---logging
+|   |   |       app_logger.dart
+|   |   |       
+|   |   +---network
+|   |   |       api_client.dart
+|   |   |       
+|   |   \---storage
+|   |           app_storage.dart
+|   |           secure_storage_service.dart
+|   |           
+|   +---theme
+|   |       app_colors.dart
+|   |       app_radius.dart
+|   |       app_sizes.dart
+|   |       app_spacing.dart
+|   |       app_theme.dart
+|   |       app_typography.dart
+|   |       
+|   +---utils
+|   |       .gitkeep
+|   |       
+|   \---widgets
+|           action_button.dart
+|           action_grid.dart
+|           app_button.dart
+|           app_card.dart
+|           app_divider.dart
+|           app_gap.dart
+|           app_page.dart
+|           app_section.dart
+|           empty_state.dart
+|           info_tile.dart
+|           loading_view.dart
+|           section_card.dart
+|           summary_card.dart
+|           
++---features
+|   +---auth
+|   |   +---data
+|   |   |       .gitkeep
+|   |   |       
+|   |   +---domain
+|   |   |       .gitkeep
+|   |   |       
+|   |   +---presentation
+|   |   |       .gitkeep
+|   |   |       
+|   |   \---routes
+|   |           .gitkeep
+|   |           
+|   +---customer
+|   |   +---data
+|   |   |   +---datasource
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   +---dto
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   +---mapper
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   \---repository
+|   |   |           .gitkeep
+|   |   |           
+|   |   +---domain
+|   |   |   +---entities
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   +---repositories
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   \---usecases
+|   |   |           .gitkeep
+|   |   |           
+|   |   +---presentation
+|   |   |   +---pages
+|   |   |   |       customer_page.dart
+|   |   |   |       
+|   |   |   +---providers
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   +---states
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   \---widgets
+|   |   |           .gitkeep
+|   |   |           
+|   |   \---routes
+|   |           customer_routes.dart
+|   |           
+|   +---dashboard
+|   |   +---data
+|   |   |   +---datasource
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   +---dto
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   +---mapper
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   \---repository
+|   |   |           .gitkeep
+|   |   |           
+|   |   +---domain
+|   |   |   +---entities
+|   |   |   |       dashboard_summary.dart
+|   |   |   |       
+|   |   |   +---repositories
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   \---usecases
+|   |   |           .gitkeep
+|   |   |           
+|   |   +---presentation
+|   |   |   +---pages
+|   |   |   |       dashboard_page.dart
+|   |   |   |       home_page.dart
+|   |   |   |       
+|   |   |   +---providers
+|   |   |   |       dashboard_provider.dart
+|   |   |   |       
+|   |   |   +---states
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   \---widgets
+|   |   |           dashboard_grid.dart
+|   |   |           quick_action_card.dart
+|   |   |           recent_activity.dart
+|   |   |           welcome_header.dart
+|   |   |           
+|   |   \---routes
+|   |           dashboard_routes.dart
+|   |           
+|   +---followup
+|   |   +---data
+|   |   |       .gitkeep
+|   |   |       
+|   |   +---domain
+|   |   |       .gitkeep
+|   |   |       
+|   |   +---presentation
+|   |   |       .gitkeep
+|   |   |       
+|   |   \---routes
+|   |           .gitkeep
+|   |           
+|   +---media
+|   |   +---data
+|   |   |   +---datasource
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   +---dto
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   +---mapper
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   \---repository
+|   |   |           .gitkeep
+|   |   |           
+|   |   +---domain
+|   |   |   +---entities
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   +---repositories
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   \---usecases
+|   |   |           .gitkeep
+|   |   |           
+|   |   +---presentation
+|   |   |   +---pages
+|   |   |   |       media_page.dart
+|   |   |   |       
+|   |   |   +---providers
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   +---states
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   \---widgets
+|   |   |           .gitkeep
+|   |   |           
+|   |   \---routes
+|   |           media_routes.dart
+|   |           
+|   +---property
+|   |   +---data
+|   |   |   +---datasource
+|   |   |   |       .gitkeep
+|   |   |   |       mock_property_data.dart
+|   |   |   |       
+|   |   |   +---dto
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   +---mapper
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   \---repository
+|   |   |           .gitkeep
+|   |   |           mock_property_repository.dart
+|   |   |           
+|   |   +---domain
+|   |   |   +---entities
+|   |   |   |       .gitkeep
+|   |   |   |       property.dart
+|   |   |   |       property_sort.dart
+|   |   |   |       
+|   |   |   +---repositories
+|   |   |   |       .gitkeep
+|   |   |   |       property_repository.dart
+|   |   |   |       
+|   |   |   \---usecases
+|   |   |           .gitkeep
+|   |   |           
+|   |   +---presentation
+|   |   |   +---models
+|   |   |   |       property_statistics.dart
+|   |   |   |       
+|   |   |   +---pages
+|   |   |   |       add_property_page.dart
+|   |   |   |       property_details_page.dart
+|   |   |   |       property_page.dart
+|   |   |   |       
+|   |   |   +---providers
+|   |   |   |       .gitkeep
+|   |   |   |       filtered_property_provider.dart
+|   |   |   |       property_form_provider.dart
+|   |   |   |       property_list_provider.dart
+|   |   |   |       property_provider.dart
+|   |   |   |       property_repository_provider.dart
+|   |   |   |       property_search_provider.dart
+|   |   |   |       property_sort_provider.dart
+|   |   |   |       property_statistics_provider.dart
+|   |   |   |       property_status_provider.dart
+|   |   |   |       
+|   |   |   +---states
+|   |   |   |       .gitkeep
+|   |   |   |       property_state.dart
+|   |   |   |       
+|   |   |   \---widgets
+|   |   |           .gitkeep
+|   |   |           owner_information_card.dart
+|   |   |           property_action_bar.dart
+|   |   |           property_basic_form.dart
+|   |   |           property_card.dart
+|   |   |           property_header.dart
+|   |   |           property_list.dart
+|   |   |           property_search_bar.dart
+|   |   |           property_sort_dropdown.dart
+|   |   |           property_specifications.dart
+|   |   |           property_statistics_card.dart
+|   |   |           property_status_filter.dart
+|   |   |           
+|   |   \---routes
+|   |           property_routes.dart
+|   |           
+|   +---settings
+|   |   +---data
+|   |   |   +---datasource
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   +---dto
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   +---mapper
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   \---repository
+|   |   |           .gitkeep
+|   |   |           
+|   |   +---domain
+|   |   |   +---entities
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   +---repositories
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   \---usecases
+|   |   |           .gitkeep
+|   |   |           
+|   |   +---presentation
+|   |   |   +---pages
+|   |   |   |       settings_page.dart
+|   |   |   |       
+|   |   |   +---providers
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   +---states
+|   |   |   |       .gitkeep
+|   |   |   |       
+|   |   |   \---widgets
+|   |   |           .gitkeep
+|   |   |           
+|   |   \---routes
+|   |           settings_routes.dart
+|   |           
+|   \---share
+|       +---data
+|       |       .gitkeep
+|       |       
+|       +---domain
+|       |       .gitkeep
+|       |       
+|       +---presentation
+|       |       .gitkeep
+|       |       
+|       \---routes
+|               .gitkeep
+|               
++---l10n
+|       app_en.arb
+|       app_hi.arb
+|       app_localizations.dart
+|       app_localizations_en.dart
+|       app_localizations_hi.dart
+|       app_localizations_te.dart
+|       app_te.arb
+|       
+\---shared
+    +---enums
+    |       .gitkeep
+    |       
+    +---extensions
+    |       .gitkeep
+    |       
+    +---models
+    |       .gitkeep
+    |       
+    \---widgets
