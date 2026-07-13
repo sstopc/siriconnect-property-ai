@@ -17,16 +17,9 @@ class PropertyHeader extends StatelessWidget {
           width: double.infinity,
           decoration: BoxDecoration(
             color: AppColors.surface,
-            borderRadius: BorderRadius.circular(
-              AppRadius.medium,
-            ),
+            borderRadius: BorderRadius.circular(AppRadius.medium),
           ),
-          child: const Center(
-            child: Icon(
-              Icons.home_work_outlined,
-              size: 72,
-            ),
-          ),
+          child: const Center(child: Icon(Icons.home_work_outlined, size: 72)),
         ),
 
         const SizedBox(height: AppSpacing.lg),
@@ -48,9 +41,9 @@ class PropertyHeader extends StatelessWidget {
         Text(
           '₹ 75,00,000',
           style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                color: AppColors.success,
-                fontWeight: FontWeight.bold,
-              ),
+            color: AppColors.success,
+            fontWeight: FontWeight.bold,
+          ),
         ),
       ],
     );

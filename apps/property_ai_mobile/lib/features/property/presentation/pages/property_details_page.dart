@@ -13,35 +13,26 @@ class PropertyDetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Property Details'),
-      ),
+      appBar: AppBar(title: const Text('Property Details')),
       body: const SingleChildScrollView(
-        padding:  EdgeInsets.all(
-          AppSpacing.md,
-        ),
+        padding: EdgeInsets.all(AppSpacing.md),
         child: Column(
           children: [
-             PropertyHeader(),
+            PropertyHeader(),
 
-             SizedBox(
-              height: AppSpacing.xl,
-            ),
+            SizedBox(height: AppSpacing.xl),
 
-             SectionCard(
+            SectionCard(
               title: 'Property Information',
               child: PropertySpecifications(),
             ),
 
-             SectionCard(
+            SectionCard(
               title: 'Owner Information',
               child: OwnerInformationCard(),
             ),
 
-             SectionCard(
-              title: 'Actions',
-              child: PropertyActionBar(),
-            ),
+            SectionCard(title: 'Actions', child: PropertyActionBar()),
           ],
         ),
       ),

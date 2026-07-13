@@ -28,5 +28,4 @@ class AppColors {
   static const Color divider = Color(0xFFE2E8F0);
 
   static const Color card = Colors.white;
-
 }

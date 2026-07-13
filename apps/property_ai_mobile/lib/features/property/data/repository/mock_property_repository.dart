@@ -3,7 +3,6 @@ import '../../domain/repositories/property_repository.dart';
 
 import '../datasource/mock_property_data.dart';
 
-
 class MockPropertyRepository implements PropertyRepository {
   MockPropertyRepository() {
     _properties.addAll(mockProperties);

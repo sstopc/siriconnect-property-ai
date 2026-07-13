@@ -8,16 +8,12 @@ class AddPropertyPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Add Property'),
-      ),
+      appBar: AppBar(title: const Text('Add Property')),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
           children: [
-            const LinearProgressIndicator(
-              value: 1 / 6,
-            ),
+            const LinearProgressIndicator(value: 1 / 6),
 
             const SizedBox(height: 24),
 
@@ -32,9 +28,7 @@ class AddPropertyPage extends StatelessWidget {
             const SizedBox(height: 24),
 
             const Expanded(
-              child: SingleChildScrollView(
-                child: PropertyBasicForm(),
-              ),
+              child: SingleChildScrollView(child: PropertyBasicForm()),
             ),
 
             const SizedBox(height: 16),

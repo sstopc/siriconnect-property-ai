@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-
 import '../../../../core/widgets/app_gap.dart';
 import '../../../../core/widgets/app_page.dart';
 import '../../../../core/widgets/app_section.dart';

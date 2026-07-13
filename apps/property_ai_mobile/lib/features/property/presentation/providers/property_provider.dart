@@ -5,8 +5,7 @@ import '../states/property_state.dart';
 import 'property_repository_provider.dart';
 
 class PropertyNotifier extends StateNotifier<PropertyState> {
-  PropertyNotifier(this._repository)
-      : super(const PropertyState()) {
+  PropertyNotifier(this._repository) : super(const PropertyState()) {
     loadProperties();
   }
 
@@ -17,18 +16,12 @@ class PropertyNotifier extends StateNotifier<PropertyState> {
 
     final properties = await _repository.getProperties();
 
-    state = state.copyWith(
-      properties: properties,
-      isLoading: false,
-    );
+    state = state.copyWith(properties: properties, isLoading: false);
   }
 }
 
-final propertyProvider =
-    StateNotifierProvider<PropertyNotifier, PropertyState>(
+final propertyProvider = StateNotifierProvider<PropertyNotifier, PropertyState>(
   (ref) {
-    return PropertyNotifier(
-      ref.read(propertyRepositoryProvider),
-    );
+    return PropertyNotifier(ref.read(propertyRepositoryProvider));
   },
 );

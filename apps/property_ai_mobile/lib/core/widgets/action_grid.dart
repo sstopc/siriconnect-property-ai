@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
 import '../theme/app_spacing.dart';
 
-
 class ActionGrid extends StatelessWidget {
-  const ActionGrid({
-    super.key,
-    required this.children,
-  });
+  const ActionGrid({super.key, required this.children});
 
   final List<Widget> children;
 

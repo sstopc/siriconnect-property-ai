@@ -5,11 +5,7 @@ import '../theme/app_radius.dart';
 import '../theme/app_spacing.dart';
 
 class SectionCard extends StatelessWidget {
-  const SectionCard({
-    super.key,
-    required this.title,
-    required this.child,
-  });
+  const SectionCard({super.key, required this.title, required this.child});
 
   final String title;
   final Widget child;
@@ -18,29 +14,18 @@ class SectionCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       color: AppColors.card,
-      margin: const EdgeInsets.only(
-        bottom: AppSpacing.lg,
-      ),
+      margin: const EdgeInsets.only(bottom: AppSpacing.lg),
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(
-          AppRadius.medium,
-        ),
+        borderRadius: BorderRadius.circular(AppRadius.medium),
       ),
       child: Padding(
-        padding: const EdgeInsets.all(
-          AppSpacing.md,
-        ),
+        padding: const EdgeInsets.all(AppSpacing.md),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              title,
-              style: Theme.of(context).textTheme.titleLarge,
-            ),
+            Text(title, style: Theme.of(context).textTheme.titleLarge),
 
-            const SizedBox(
-              height: AppSpacing.md,
-            ),
+            const SizedBox(height: AppSpacing.md),
 
             child,
           ],

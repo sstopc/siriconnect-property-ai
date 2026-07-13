@@ -7,12 +7,10 @@ class PropertyBasicForm extends ConsumerStatefulWidget {
   const PropertyBasicForm({super.key});
 
   @override
-  ConsumerState<PropertyBasicForm> createState() =>
-      _PropertyBasicFormState();
+  ConsumerState<PropertyBasicForm> createState() => _PropertyBasicFormState();
 }
 
-class _PropertyBasicFormState
-    extends ConsumerState<PropertyBasicForm> {
+class _PropertyBasicFormState extends ConsumerState<PropertyBasicForm> {
   late final TextEditingController _titleController;
   late final TextEditingController _descriptionController;
   late final TextEditingController _priceController;

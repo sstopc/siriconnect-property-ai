@@ -4,7 +4,6 @@ import '../theme/app_colors.dart';
 import '../theme/app_sizes.dart';
 import '../theme/app_spacing.dart';
 
-
 class InfoTile extends StatelessWidget {
   const InfoTile({
     super.key,
@@ -20,30 +19,18 @@ class InfoTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(
-        vertical: AppSpacing.sm,
-      ),
+      padding: const EdgeInsets.symmetric(vertical: AppSpacing.sm),
       child: Row(
         children: [
-          Icon(
-            icon,
-            color: AppColors.primary,
-            size: AppSizes.iconMedium
-          ),
+          Icon(icon, color: AppColors.primary, size: AppSizes.iconMedium),
 
           const SizedBox(width: AppSpacing.md),
 
           Expanded(
-            child: Text(
-              label,
-              style: Theme.of(context).textTheme.bodyLarge,
-            ),
+            child: Text(label, style: Theme.of(context).textTheme.bodyLarge),
           ),
 
-          Text(
-            value,
-            style: Theme.of(context).textTheme.titleMedium,
-          ),
+          Text(value, style: Theme.of(context).textTheme.titleMedium),
         ],
       ),
     );

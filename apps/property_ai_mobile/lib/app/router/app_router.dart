@@ -57,11 +57,11 @@ class AppRouter {
           GoRoute(path: '/', builder: (context, state) => const HomePage()),
           GoRoute(
             path: PropertyRoutes.propertyList,
-            builder: (context, state) => const PropertyPage()
+            builder: (context, state) => const PropertyPage(),
           ),
           GoRoute(
             path: PropertyRoutes.addProperty,
-            builder: (context, state) => const AddPropertyPage()
+            builder: (context, state) => const AddPropertyPage(),
           ),
           GoRoute(
             path: PropertyRoutes.details,

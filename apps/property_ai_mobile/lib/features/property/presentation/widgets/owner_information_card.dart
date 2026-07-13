@@ -9,10 +9,7 @@ class OwnerInformationCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Column(
       children: [
-        CircleAvatar(
-          radius: 32,
-          child: Icon(Icons.person, size: 36),
-        ),
+        CircleAvatar(radius: 32, child: Icon(Icons.person, size: 36)),
 
         SizedBox(height: 16),
 

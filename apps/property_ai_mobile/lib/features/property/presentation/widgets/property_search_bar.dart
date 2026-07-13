@@ -6,10 +6,7 @@ import '../../../../core/theme/app_sizes.dart';
 import '../../../../core/theme/app_spacing.dart';
 
 class PropertySearchBar extends StatelessWidget {
-  const PropertySearchBar({
-    super.key,
-    required this.onChanged,
-  });
+  const PropertySearchBar({super.key, required this.onChanged});
 
   final ValueChanged<String> onChanged;
 
@@ -19,10 +16,7 @@ class PropertySearchBar extends StatelessWidget {
       onChanged: onChanged,
       decoration: InputDecoration(
         hintText: 'Search by title or location...',
-        prefixIcon: const Icon(
-          Icons.search,
-          size: AppSizes.iconMedium,
-        ),
+        prefixIcon: const Icon(Icons.search, size: AppSizes.iconMedium),
         filled: true,
         fillColor: AppColors.surface,
         contentPadding: const EdgeInsets.symmetric(
@@ -30,25 +24,16 @@ class PropertySearchBar extends StatelessWidget {
           vertical: AppSpacing.md,
         ),
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(
-            AppRadius.medium,
-          ),
+          borderRadius: BorderRadius.circular(AppRadius.medium),
           borderSide: BorderSide.none,
         ),
         enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(
-            AppRadius.medium,
-          ),
+          borderRadius: BorderRadius.circular(AppRadius.medium),
           borderSide: BorderSide.none,
         ),
         focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(
-            AppRadius.medium,
-          ),
-          borderSide: const BorderSide(
-            color: AppColors.primary,
-            width: 1.5,
-          ),
+          borderRadius: BorderRadius.circular(AppRadius.medium),
+          borderSide: const BorderSide(color: AppColors.primary, width: 1.5),
         ),
       ),
     );

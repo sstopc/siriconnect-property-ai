@@ -29,10 +29,7 @@ class ActionButton extends StatelessWidget {
             CircleAvatar(
               radius: 24,
               backgroundColor: AppColors.primary.withValues(alpha: 0.10),
-              child: Icon(
-                icon,
-                color: AppColors.primary,
-              ),
+              child: Icon(icon, color: AppColors.primary),
             ),
 
             const SizedBox(height: AppSpacing.sm),

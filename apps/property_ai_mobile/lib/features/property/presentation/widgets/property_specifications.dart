@@ -9,17 +9,9 @@ class PropertySpecifications extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Column(
       children: [
-        InfoTile(
-          icon: Icons.bed_outlined,
-          label: 'Bedrooms',
-          value: '2',
-        ),
+        InfoTile(icon: Icons.bed_outlined, label: 'Bedrooms', value: '2'),
 
-        InfoTile(
-          icon: Icons.bathtub_outlined,
-          label: 'Bathrooms',
-          value: '2',
-        ),
+        InfoTile(icon: Icons.bathtub_outlined, label: 'Bathrooms', value: '2'),
 
         InfoTile(
           icon: Icons.square_foot_outlined,
@@ -27,17 +19,9 @@ class PropertySpecifications extends StatelessWidget {
           value: '1150 sqft',
         ),
 
-        InfoTile(
-          icon: Icons.apartment_outlined,
-          label: 'Floor',
-          value: '3',
-        ),
+        InfoTile(icon: Icons.apartment_outlined, label: 'Floor', value: '3'),
 
-        InfoTile(
-          icon: Icons.explore_outlined,
-          label: 'Facing',
-          value: 'East',
-        ),
+        InfoTile(icon: Icons.explore_outlined, label: 'Facing', value: 'East'),
 
         InfoTile(
           icon: Icons.local_parking_outlined,
