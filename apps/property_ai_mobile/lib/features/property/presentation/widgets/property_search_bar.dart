@@ -8,10 +8,10 @@ import '../../../../core/theme/app_spacing.dart';
 class PropertySearchBar extends StatelessWidget {
   const PropertySearchBar({
     super.key,
-    this.onChanged,
+    required this.onChanged,
   });
 
-  final ValueChanged<String>? onChanged;
+  final ValueChanged<String> onChanged;
 
   @override
   Widget build(BuildContext context) {

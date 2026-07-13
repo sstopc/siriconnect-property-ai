@@ -5,7 +5,7 @@ import '../../features/customer/presentation/pages/customer_page.dart';
 import '../../features/dashboard/presentation/pages/home_page.dart';
 import '../../features/media/presentation/pages/media_page.dart';
 import '../../features/property/presentation/pages/property_details_page.dart';
-import '../../features/property/presentation/pages/property_list_page.dart';
+import '../../features/property/presentation/pages/property_page.dart';
 import '../../features/property/routes/property_routes.dart';
 import '../../features/settings/presentation/pages/settings_page.dart';
 import '../layout/app_shell.dart';
@@ -57,7 +57,7 @@ class AppRouter {
           GoRoute(path: '/', builder: (context, state) => const HomePage()),
           GoRoute(
             path: PropertyRoutes.propertyList,
-            builder: (context, state) => const PropertyListPage()
+            builder: (context, state) => const PropertyPage()
           ),
           GoRoute(
             path: PropertyRoutes.addProperty,

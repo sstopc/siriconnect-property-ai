@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../../core/theme/app_spacing.dart';
 import '../providers/property_list_provider.dart';
+import '../providers/property_search_provider.dart';
 import '../widgets/property_card.dart';
 import '../widgets/property_search_bar.dart';
 
@@ -21,7 +22,11 @@ class PropertyPage extends ConsumerWidget {
         padding: const EdgeInsets.all(AppSpacing.md),
         child: Column(
           children: [
-            const PropertySearchBar(),
+            PropertySearchBar(
+              onChanged: (value) {
+                ref.read(propertySearchProvider.notifier).state = value;
+              },
+            ),
 
             const SizedBox(height: AppSpacing.lg),
 
@@ -38,7 +43,18 @@ class PropertyPage extends ConsumerWidget {
                 ),
 
                 data: (items) {
-                  if (items.isEmpty) {
+                  final search = ref.watch(propertySearchProvider).trim().toLowerCase();
+
+                  final filteredItems = items.where((property) {
+                    if (search.isEmpty) {
+                      return true;
+                    }
+
+                    return property.title.toLowerCase().contains(search) ||
+                        property.location.toLowerCase().contains(search);
+                  }).toList();
+
+                  if (filteredItems.isEmpty) {
                     return const Center(
                       child: Text(
                         'No properties found.',
@@ -47,10 +63,10 @@ class PropertyPage extends ConsumerWidget {
                   }
 
                   return ListView.builder(
-                    itemCount: items.length,
+                    itemCount: filteredItems.length,
                     itemBuilder: (context, index) {
                       return PropertyCard(
-                        property: items[index],
+                        property: filteredItems[index],
                       );
                     },
                   );
