@@ -1,10 +1,10 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../domain/entities/property.dart';
-import 'property_repository_provider.dart';
+import 'property_service_provider.dart';
 
 final propertyListProvider = FutureProvider<List<Property>>((ref) async {
-  final repository = ref.watch(propertyRepositoryProvider);
+  final service = ref.watch(propertyServiceProvider);
 
-  return repository.getProperties();
+  return service.getProperties();
 });
